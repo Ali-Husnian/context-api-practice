@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 const Logout = () => {
   const [posts, setPosts] = useState([]);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     const url = "https://jsonplaceholder.typicode.com/posts";
@@ -45,7 +44,7 @@ const Logout = () => {
           </table>
         ))
       ) : (
-        <p>No posts available.</p>
+        <p>Sorry , no posts found.</p>
       )}
     </div>
   );
